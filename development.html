@@ -3,7 +3,7 @@
   Course: Web Development
   Teacher: Scott Hardman
   School: PTec
-  Date Last Modified: 
+  Date Last Modified: 1/18/2023
 -->
 
 <!DOCTYPE html>
@@ -17,6 +17,34 @@
     <link rel="stylesheet" href="stylesheets/main.css" />
     <!-- style is internal styling -->
     <style>
+      /* 
+        #______ is id styling
+        #ggfn-seal styles the id ggfn-seal
+
+        display changes the display of the content box
+        display changed to flex
+
+        border-radius changes the corners roundness
+        corners set for 10 pixels of curve
+
+        margin is the space from the border to the edge
+        margin set to auto to center it
+
+        margin-top changes the margin on top
+        top margin set to 20px
+
+        width changes the set width
+        width set to 380px
+
+        height changes the set height
+        height set to 320px
+
+        border changes the border
+        boder is set to 3px and solid #302939
+
+        align-self changes the alignmet 
+        alignmet set to center
+      */
       #ggfn-seal {
         display: flex;
         border-radius: 10px;
@@ -27,6 +55,22 @@
         border: 3px solid #302939;
         align-self: center;
       }
+
+      /* 
+        #ggfn-seal styles the id ggfn-seal
+
+        corners set for 10 pixels of curve
+
+        margin set to auto to center it
+
+        top margin set to 20px
+
+        width set to 994px
+
+        height set to 6800px
+
+        boder is set to 3px and solid #302939
+      */
       #ggfn-map {
         border-radius: 10px;
         margin: auto;
@@ -42,6 +86,37 @@
     <!-- header form title and navigation -->
     <header>
       <h1>Treaty Number 4</h1>
+
+      <div id="tab" tabindex="0">
+        <h3>Other resources</h3>
+        <div id="tab-content">
+          <br />
+          <!-- ul to formate sources -->
+          <ul>
+            <li>
+              <!-- LABRC interactive map source -->
+              <a href="https://labrc.com/map/" target="_blank">
+                LABRC interactive map
+              </a>
+            </li>
+            <li>
+              <!-- NAAWI-OODENA source -->
+              <a
+                href="https://www.clc-sic.ca/real-estate/naawi-oodena"
+                target="_blank">
+                NAAWI-OODENA
+              </a>
+            </li>
+            <li>
+              <!-- Traditional First Nation Community Names source -->
+              <a href="https://mfnerc.org/community-map/" target="_blank">
+                Traditional First Nation Community Names
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+
       <!-- nav for navigation bar -->
       <nav>
         <!-- ul>li>a> to list page links/navigation -->

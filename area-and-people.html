@@ -3,7 +3,7 @@
   Course: Web Development
   Teacher: Scott Hardman
   School: PTec
-  Date Last Modified:
+  Date Last Modified: 1/18/2023
 -->
 
 <!DOCTYPE html>
@@ -17,6 +17,34 @@
     <link rel="stylesheet" href="stylesheets/main.css" />
     <!-- style is internal styling -->
     <style>
+      /* 
+        #______ is id styling
+        #gate styles the id gate
+
+        display changes the display of the content box
+        display changed to flex
+
+        border-radius changes the corners roundness
+        corners set for 10 pixels of curve
+
+        margin is the space from the border to the edge
+        margin set to auto to center it
+
+        margin-top changes the margin on top
+        top margin set to 20px
+
+        width changes the set width
+        width set to 290px
+
+        height changes the set height
+        height set to 220px
+
+        border changes the border
+        boder is set to 3px and solid #302939
+
+        align-self changes the alignmet 
+        alignmet set to center
+      */
       #gate {
         display: flex;
         border-radius: 10px;
@@ -28,23 +56,22 @@
         background-color: #faf9fa;
         align-self: center;
       }
-      /*
-        .______ is class styling
-        Class map-image styling for map adjustments
 
-        border-radius changes the curve of corners
+      /*
+        id map-image1 and  map-image2 styling for map adjustments
+
         border-radius of 10px
 
-        width changes set width
-        width of 400px height of 350px
+        margin set to auto to center
 
-        height changes set height
-        height of 400px
+        margin-top set to 20px
 
-        border adds and styles border
+        width of 490px
+
+        height of 430px
+
         border 3px thick and solid #302939
 
-        background-color changes color of background
         background-color of #faf9fa
       */
       #map-image1,
@@ -58,6 +85,25 @@
         background-color: #faf9fa;
       }
 
+      /*
+        id map-image1 and  map-image2 styling for map adjustments when hovered over
+
+        position changes the position
+        position set to fixed to be fixed
+
+        border-radius of 10px
+
+        width of 490px
+
+        height of 430px
+
+        border 3px thick and solid #302939
+
+        background-color of #faf9fa
+
+        transform changes a proporty of size, posision, or color
+        scale set to 2.1 multiple
+      */
       #map-image1:hover,
       #map-image1:focus {
         position: fixed;
@@ -76,18 +122,6 @@
         -moz-transform: scale(2.1);
         -webkit-transform: scale(2.1);
       }
-      /* #map-image2:hover,
-      #map-image2:focus {
-        position: fixed;
-        bottom: 0;
-        right: 0;
-        left: 0;
-        border-radius: 10px;
-        width: 1000px;
-        height: 875px;
-        border: 3px solid #302939;
-        background-color: #faf9fa;
-      } */
     </style>
   </head>
   <!-- body for content -->
@@ -95,6 +129,37 @@
     <!-- header form title and navigation -->
     <header>
       <h1>Treaty Number 4</h1>
+
+      <div id="tab" tabindex="0">
+        <h3>Other resources</h3>
+        <div id="tab-content">
+          <br />
+          <!-- ul to formate sources -->
+          <ul>
+            <li>
+              <!-- LABRC interactive map source -->
+              <a href="https://labrc.com/map/" target="_blank">
+                LABRC interactive map
+              </a>
+            </li>
+            <li>
+              <!-- NAAWI-OODENA source -->
+              <a
+                href="https://www.clc-sic.ca/real-estate/naawi-oodena"
+                target="_blank">
+                NAAWI-OODENA
+              </a>
+            </li>
+            <li>
+              <!-- Traditional First Nation Community Names source -->
+              <a href="https://mfnerc.org/community-map/" target="_blank">
+                Traditional First Nation Community Names
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+
       <!-- nav for navigation bar -->
       <nav>
         <!-- ul>li>a> to list page links/navigation -->

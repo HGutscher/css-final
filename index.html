@@ -3,7 +3,7 @@
   Course: Web Development
   Teacher: Scott Hardman
   School: PTec
-  Date Last Modified: 
+  Date Last Modified: 1/18/2023
 -->
 
 <!DOCTYPE html>
@@ -17,6 +17,33 @@
     <link rel="stylesheet" href="stylesheets/main.css" />
     <!-- style is internal styling -->
     <style>
+      /* 
+        Img styling styles the images
+
+        display changes the display of the content box
+        display changed to flex
+
+        border-radius changes the corners roundness
+        corners set for the pixels of curve
+
+        margin is the space from the border to the edge
+        margin set to auto to center in
+
+        margin-top changes the margin on top
+        top margin set to 20px
+
+        width changes the set width
+        width set to 400px
+
+        height changes the set height
+        height set to 265px
+
+        border changes the border
+        boder is set to 3px and solid #302939
+
+        align-self changes the alignmet 
+        alignmet set to center
+      */
       img {
         display: flex;
         border-radius: 10px;
@@ -32,16 +59,12 @@
         #______ is Id styling
         Id iframe-treaty-video styling for iframe adjustments
 
-        width changes set width
         width of 950px
 
-        height changes set height
         height of 450px
 
-        border adds and styles border
         border 3px thick and solid #302939
 
-        border-radius changes the curve of corners
         border-radius of 5px
 
         background-color changes color of background
@@ -66,15 +89,33 @@
     <header>
       <h1>Treaty Number 4</h1>
 
-      <div class="tab">
+      <div id="tab" tabindex="0">
         <h3>Other resources</h3>
-        <div class="tab-content">
-          <!-- gov of ca source -->
-          <a
-            href="https://www.rcaanc-cirnac.gc.ca/eng/1100100028689/1581293019940"
-            target="_blank">
-            Governement of Canada - Treaty Texts: Treaty No.4
-          </a>
+        <div id="tab-content">
+          <br />
+          <!-- ul to formate sources -->
+          <ul>
+            <li>
+              <!-- LABRC interactive map source -->
+              <a href="https://labrc.com/map/" target="_blank">
+                LABRC interactive map
+              </a>
+            </li>
+            <li>
+              <!-- NAAWI-OODENA source -->
+              <a
+                href="https://www.clc-sic.ca/real-estate/naawi-oodena"
+                target="_blank">
+                NAAWI-OODENA
+              </a>
+            </li>
+            <li>
+              <!-- Traditional First Nation Community Names source -->
+              <a href="https://mfnerc.org/community-map/" target="_blank">
+                Traditional First Nation Community Names
+              </a>
+            </li>
+          </ul>
         </div>
       </div>
 
